@@ -373,4 +373,36 @@ body {
   width: 374px;
   height: 212px; }
 
+@media (min-width: 640px) {
+  .main__article {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-area: menu;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 5;
+    grid-column: 4/9;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    width: 574px;
+    height: 342px;
+    background: black; }
+  .form__textarea {
+    resize: none;
+    border-radius: 16px;
+    width: 574px;
+    height: 312px; }
+  .buttons {
+    padding: 0 10px;
+    display: inline; }
+    .buttons__save {
+      background: salmon; }
+    .buttons__load {
+      margin-left: 16px;
+      background: salmon; }
+    .buttons__submit {
+      margin-left: 364px;
+      background: salmon; } }
+
 /*# sourceMappingURL=main.css.map */
