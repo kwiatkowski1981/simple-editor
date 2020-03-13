@@ -17,44 +17,54 @@ body {
 }
 
 .main {
-  margin: 0;
-  display: grid;
-  align-content: center;
-  justify-content: center;
-  min-height: 100vh;
-  grid-template-areas:
-    "header header header header header header header header header header header header"
-    "menu menu menu menu menu menu menu menu menu menu menu menu"
-    "footer footer footer footer footer footer footer footer footer footer footer footer";
-  grid-template-columns: repeat(1fr);
+              margin: 0;
+              display: grid;
+              align-content: center;
+              justify-content: center;
+              min-height: 100vh;
+              grid-template-areas:
+                "header header header header header header header header header header header header"
+                "menu menu menu menu menu menu menu menu menu menu menu menu"
+                "footer footer footer footer footer footer footer footer footer footer footer footer";
+              grid-template-columns: repeat(1fr);
+
   &__article {
-    grid-area: menu;
-    grid-column: 4/9;
-    grid-row: 2/3;
-  }
-  &__textarea {
-    resize: none;
-    border-radius: 16px;
-    width: 374px;
-    height: 212px;
-  }
+                grid-area: menu;
+                grid-column: 4/9;
+                grid-row: 2/3;
+                width: 374px;
+                height: 242px;
+                background: black;
+              }
+  &__paragraph{
+                z-index: 5;
+                color: #fff;
+                padding-left:16px ;
+                margin: 2px 0;
+              }
 }
 
-.button {
-  width: 50px;
-  text-align: left;
-  &__save {
-    grid-column: 4/5;
-  }
-  &__load {
-
-  }
-}
 
 .buttons {
-
+          width: 60px;
+          padding: 0 10px;
+          display: inline;
+          &__save {
+            background: salmon;
+                  }
+          &__load {
+                    margin-left: 16px;
+                    background: salmon;
+                  }
+          &__submit{
+                    margin-left: 164px;
+                    background: salmon;
+                  }
 }
 
-.submit{
-text-align: right;
+.form__textarea {
+  resize: none;
+  border-radius: 16px;
+  width: 374px;
+  height: 212px;
 }

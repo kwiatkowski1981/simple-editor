@@ -344,22 +344,33 @@ body {
     grid-column: 4/9;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
-    grid-row: 2/3; }
-  .main__textarea {
-    resize: none;
-    border-radius: 16px;
+    grid-row: 2/3;
     width: 374px;
-    height: 212px; }
+    height: 242px;
+    background: black; }
+  .main__paragraph {
+    z-index: 5;
+    color: #fff;
+    padding-left: 16px;
+    margin: 2px 0; }
 
-.button {
-  width: 50px;
-  text-align: left; }
-  .button__save {
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 1;
-    grid-column: 4/5; }
+.buttons {
+  width: 60px;
+  padding: 0 10px;
+  display: inline; }
+  .buttons__save {
+    background: salmon; }
+  .buttons__load {
+    margin-left: 16px;
+    background: salmon; }
+  .buttons__submit {
+    margin-left: 164px;
+    background: salmon; }
 
-.submit {
-  text-align: right; }
+.form__textarea {
+  resize: none;
+  border-radius: 16px;
+  width: 374px;
+  height: 212px; }
 
 /*# sourceMappingURL=main.css.map */
